@@ -4,7 +4,11 @@
 body{
     margin: 0;
     border: 0;
-    background-image: url(../imagens/wallpaper001.jpg);
+    background-image: url(../imagens/coding-bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center right;
 }
 .conteiner{
     display: flex;
@@ -25,6 +29,13 @@ header{
 main{
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
+
+    @media (max-width: 1070px) {
+          flex-direction: column;
+            
+          
+    }
     
     
 }
@@ -36,6 +47,7 @@ main{
     width: 500px;
     margin-top: 100px;
     margin-bottom: 100px;
+    
 }
 
 img{
@@ -77,3 +89,4 @@ a>img{
     top: 30px;
     width: 40px;
 }
+
