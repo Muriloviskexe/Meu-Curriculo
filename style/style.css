@@ -35,7 +35,7 @@ header{
 }
 
 main{
-    height: 200vh;
+    height: 210vh;
     min-width: 500px;
     max-width: 900px;
     background-color: rgba(255, 255, 255, 0.842);
@@ -101,4 +101,14 @@ a:hover{
 h3{
     text-align: center;
     font-size: 1.2em;
+}
+
+footer>p{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    font-size: 1em;
+
 }
