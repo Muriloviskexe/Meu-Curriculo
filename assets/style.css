@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* GERAL */
+html, body{
+    margin: 0;
+    border: 0;
+    background-image: linear-gradient(to bottom, rgb(49, 7, 49) 65%, rgb(22, 22, 68));
+}
+
+/* HEADER */
+header{
+    background-color: rgb(49, 7, 49);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* NAVEGAÇÃO */
+.nav{
+    display: flex;
+    align-items: end;
+}
+
+.nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 30px;
+}
+
+/* TELAS */
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao{
+    color: white;
+    width: 400px;
+
+}
+
+img{
+    height: 500px;
+}
+
+.sobre-mim{
+    background-color: rgb(46, 43, 43);
+    height: 500px;
+    width: auto;
+}
+
+.conhecimentos{
+    background-color: rgb(49, 54, 54);
+    height: 500px;
+    width: auto;
+}
+
+.experiencias{
+    background-color: rgb(120, 91, 91);
+    height: 500px;
+    width: auto;
+}
+
+.contato{
+    background-color: rgb(46, 43, 43);
+    height: 500px;
+    width: auto;
+}
+
+/* RODAPÉ */
+
+footer{
+    color: white;
+}
