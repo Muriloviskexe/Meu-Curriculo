@@ -30,42 +30,66 @@ header{
     margin-right: 30px;
 }
 
-/* TELAS */
+/* TPRINCIPAL */
 .home{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .descricao{
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}.descricao > p{
+    text-align: justify;
     width: 400px;
-
 }
 
-img{
-    height: 500px;
+.montanha{
+    height: 400px;
 }
-
+/* SOBRE MIM */
 .sobre-mim{
-    background-color: rgb(46, 43, 43);
+    background-color: rgb(68, 17, 60);
     height: 500px;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 100px;
 }
 
+.eu{
+    padding: 20px;
+    color: white;
+    width: 500px;
+    margin-right: 20px;
+    font-size: larger;
+    
+}.eu > h1{
+    text-align: center  ;
+}
+.eu-foto{
+    height: 150px ;
+}
+/* CONHECIMENTOS */
 .conhecimentos{
     background-color: rgb(49, 54, 54);
     height: 500px;
     width: auto;
 }
-
+/* EXPERIENCIA */
 .experiencias{
     background-color: rgb(120, 91, 91);
     height: 500px;
     width: auto;
 }
-
+/* CONTATO */
 .contato{
     background-color: rgb(46, 43, 43);
     height: 500px;
