@@ -24,12 +24,12 @@
 
         <ul class="nav-links">
             <li class="link"><a href="#">Home</a></li>
-            <li id="link1" class="link"><a href="#">Sobre</a></li>
-            <li id="link2" class="link"><a href="#">Projetos</a></li>
-            <li id="link3" class="link"><a href="#">Contato</a></li>
+            <li class="link"><a href="#sobre">Sobre</a></li>
+            <li class="link"><a href="#Projetos">Projetos</a></li>
+            <li class="link"><a href="#Contato">Contato</a></li>
         </ul>
 
-        <button class="btn">Me contrate</button>
+        <a href="#Contato"><button class="btn">Me contrate</button></a>
 
     </nav>
 
@@ -41,7 +41,7 @@
             
             <h1>Olá, Eu sou o <span>Murilo</span>, Web Developer</h1>
             <p>Estudante de Sistemas de Informação pela universidade São Judas Tadeus, Campo Paulista, 4° Semestre</p>
-            <button class="btn">Conheça mais</button>
+            <a href="#Projetos"><button class="btn">Conheça mais</button></a>
         </div>
 
         <!-- Imagens HOME -->
@@ -51,7 +51,7 @@
     </header>
 
     <!-- SOBRE MIM -->
-    <section class="conteiner">
+    <section class="conteiner" id="sobre">
         <h2 class="header">Sobre Mim</h2>
         <p class="sub-header">Prazer, sou Murilo, Tenho 20 Anos, Sou de Suzano, Grande São Paulo, sou uma pessoa muito determinada e dedicada, adoro novos passatempos, esportes, jogos, sou muito competitivo, amo animais e sou dono de 3 gatos.
 
@@ -79,43 +79,67 @@
     </section>
 
     <!-- PROJETOS -->
-    <section class="conteiner">
+    <section class="conteiner" id="Projetos">
         <h2 class="header">Meus Projetos</h2>
             <div class="projetos">
+
                 <div class="card">
+                    <!-- Projeto Android -->
                     <span><i class="ri-android-line"></i></span>
                     <h4>Projeto Android</h4>
                     <p>Projeto desenvolvido no curso de HTML5 e CSS3 do Curso em video, aplicando todos os conhecimentos de responsividade, textos, links, videos e etc</p>
-                    <a href="#">Repositório do Projeto <i class="ri-arrow-right-s-line"></i></a>
-                    <a href="#">Site no Ar <i class="ri-arrow-right-s-line"></i></a>
+
+                    <!-- Link para o GITHUB -->
+                    <a href="https://github.com/Muriloviskexe/Projeto-Andoid" target="_blank">Repositório do Projeto <i class="ri-arrow-right-s-line"></i></a>
+
+                    <!-- Link para o SITE -->
+                    <a href="https://muriloviskexe.github.io/Projeto-Andoid/" target="_blank">Site no Ar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
+
                 <div class="card">
+                    <!-- Projeto Cordel -->
                     <span><i class="ri-git-repository-line"></i></span>
                     <h4>Projeto Cordel</h4>
                     <p>Projeto criado no curso de HTML5 e CSS3 do Curso em video aplicando conhecimentos de citações, e imagens de fundo com efeito paralax</p>
-                    <a href="#">Repositório do Projeto <i class="ri-arrow-right-s-line"></i></a>
-                    <a href="#">Site no Ar <i class="ri-arrow-right-s-line"></i></a>
+
+                    <!-- Link para o GITHUB -->
+                    <a href="https://github.com/Muriloviskexe/Projeto-Cordel" target="_blank">Repositório do Projeto <i class="ri-arrow-right-s-line"></i></a>
+
+                    <!-- Link para o SITE -->
+                    <a href="https://muriloviskexe.github.io/Projeto-Cordel/html/" target="_blank">Site no Ar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
+
+                <!-- Projeto E-commerce -->
                 <div class="card">
                     <span><i class="ri-shopping-bag-line"></i></span>
                     <h4>Projeto E-commerce</h4>
                     <p>Projeto criado no Intensivo de Javascript do grupo Hashtag, aplicando diversos conceitos de funções, prencimento automatico de itens, criação de querry's e mais.</p>
-                    <a href="#">Repositório do Projeto <i class="ri-arrow-right-s-line"></i></a>
-                    <a href="#">Site no Ar <i class="ri-arrow-right-s-line"></i></a>
+
+                    <!-- Link para o GITHUB -->
+                    <a href="https://github.com/Muriloviskexe/Projeto-E-commerce" target="_blank">Repositório do Projeto <i class="ri-arrow-right-s-line"></i></a>
+
+                    <!-- Link para o SITE -->
+                    <a href="https://muriloviskexe.github.io/Projeto-E-commerce/" target="_blank">Site no Ar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
+
+                <!-- Projeto Lading Page -->
                 <div class="card">
                     <span><i class="ri-pages-line"></i></span>
                     <h4>Meu Portfolio</h4>
                     <p>Projeto criado sozinho com apenas ajuda da internet, mostrando tudo que aprendi até agora com a programação WEB</p>
-                    <a href="#">Repositório do Projeto <i class="ri-arrow-right-s-line"></i></a>
-                    <a href="#">Site no Ar <i class="ri-arrow-right-s-line"></i></a>
+
+                    <!-- Link para o GITHUB -->
+                    <a href="https://github.com/Muriloviskexe/Meu-Curriculo" target="_blank">Repositório do Projeto <i class="ri-arrow-right-s-line"></i></a>
+
+                    <!-- Link para o SITE -->
+                    <a href="https://muriloviskexe.github.io/Meu-Curriculo/html/index.html" target="_blank">Site no Ar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
 
             </div>
     </section>
 
     <!-- CONTATO -->
-    <footer class="conteiner">
+    <footer class="conteiner" id="Contato">
         <span class="blur"></span>
         <span class="blur"></span>
         <div class="coluna">
@@ -123,7 +147,7 @@
                 <img src="img/Eu-pequeno.png">
             </div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minhas redes socias e onde <br>me encontrar
             </p>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/murilo-garcia-da-costa-046320234/" target="_blank"><i class="ri-linkedin-fill"></i></a>
@@ -133,15 +157,15 @@
         </div>
         <div class="coluna">
             <h4>Contato</h4>
-            <a href="mailto:murilogccontato@gmail.com"><i class="ri-mail-add-line"></i> Email</a>
-            <a href="tel:+5511993054384"><i class="ri-phone-line"></i> Telefone</a>
-            <a href="https://wa.me/5511993054384?text=Ol%C3%A1%2C+vi+seu+Portfolio+Online+e+gostaria+de+conversar+sobre+uma+vaga%2C+teria+um+momento+agora%3F" target="_blank"><i class="ri-whatsapp-line"></i> WhatsApp</a>
+            <a href="mailto:murilogccontato@gmail.com"><i class="ri-mail-add-line"></i> Email: <br> murilogccontato@gmail.com</a>
+            <a href="tel:+5511993054384"><i class="ri-phone-line"></i> Telefone: <br>+55 11 993054384</a>
+            <a href="https://wa.me/5511993054384?text=Ol%C3%A1%2C+vi+seu+Portfolio+Online+e+gostaria+de+conversar+sobre+uma+vaga%2C+teria+um+momento+agora%3F" target="_blank"><i class="ri-whatsapp-line"></i> WhatsApp: <br>+55 11 993054384</a>
         </div>
         <div class="coluna">
             <h4>Sobre</h4>
-            <a href="#">Eu</a>
-            <a href="#">Politica de Privacidade</a>
-            <a href="#">Termos & Condições</a>
+            <a href="#sobre">Eu</a>
+            <a href="https://docdro.id/wJdAcLR" target="_blank">Politica de Privacidade</a>
+            <a href="https://docdro.id/0kVugEk"target="_blank">Termos & Condições</a>
         </div>
     </footer>
 
