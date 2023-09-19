@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+/* Import das Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:wght@100;300;400;500;700&display=swap');
+
+/* Atalhos para cores */
+:root{
+    --main-color: #18181b;
+    --destaque-color: #183faa;
+    --destaque-color2: #122e7c;
+    --dark-gray: #343434;
+    --darker-gray: #131313;
+
+}
+
+/* Configurações gerais */
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-color);
+}
+
+/* Configurando a nav bar */
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 150px;
+    min-width: 70px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--destaque-color);
+    transition: all 300ms ease-in-out;
+}
+
+.link a:hover::after{
+    width: 80%;
+
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--destaque-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--destaque-color2);
+}
+
+/* Configurações da HOME */
+.conteiner{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 1px 1px 1000px 50px #122e7c;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .conteiner h4{
+    margin-bottom: 1rem;
+    color: #Fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #ccc;
+}
+
+header .image{
+    position: relative;
+
+}
+
+header .image::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    line-height: 20rem;
+    color: var(--destaque-color2);
+    z-index: -100;
+    opacity: 0.4;
+}
+
+header .imagem img{
+    max-width: 600px;
+    margin: auto;
+    
+}
+
+section .header{
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* Configuração do Sobre mim / SOBRE */
+
+.sub-header{
+    font-size: 1.4rem;
+    color: white;
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.habilidades{
+    position: relative;
+    padding: 2rem;
+    margin-top: 3rem;
+    column-count: 2;
+    
+}
+.habilidades h4{
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.habilidades li{
+    font-size: 1.2rem;
+    color: white;
+    line-height: 2rem;
+    gap: 2rem;
+}
+
+.linguas{
+    color: white;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+
+/* Configuração dos projetos / PROJETOS */
+.projetos{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+}
+
+.projetos .card{
+    background-color: var(--cinza-escuro);
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: all 300ms ease;
+}
+
+.projetos .card:hover{
+    background-color: var(--darker-gray);
+    border-color: #9b9b9b;
+    border-radius: 20px;
+    background: #281183;
+    box-shadow: inset 33px 33px 39px #180a50,
+            inset -33px -33px 39px #3818b6;
+    transition: all 300ms ease-in-out;
+}
+
+.projetos .card span{
+    display: inline-block;
+    background-color: var(--destaque-color);
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: white;
+    border-radius: 50px;
+}
+
+.projetos .card h4{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.projetos .card p{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+.projetos .card a{
+    color: #fff;
+    transition: all 300ms ease;
+}
+.projetos .card a:hover{
+    color: #335ed5;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Rodapé CONTATO */
+footer{
+    margin-top: 400px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(2,1fr);
+    gap: 2rem;
+}
+
+footer .coluna .logo{
+    max-width: 150px;
+    margin-bottom: 2rem;
+}
+
+footer .coluna p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .coluna .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+footer .coluna .socials a{
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+footer .coluna .socials a:hover{
+    color: white;
+    background-color: var(--destaque-color);
+    border-color: var(--destaque-color);
+}
+
+footer .coluna h4{
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .coluna >a {
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .coluna > a:hover{
+    color: var(--destaque-color);
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+
+/* RESPONSIVIDADE */
+@media(width <= 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1,1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .projetos{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .habilidades{
+        column-count: 1;
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media(width <= 600px){
+    header.image::before{
+        display: none;
+    }
+    .projetos{
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+}
+
