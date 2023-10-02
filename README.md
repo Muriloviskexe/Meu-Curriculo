@@ -5,5 +5,5 @@
 https://img.shields.io/badge/Linguagens-HTML_CSS-blue https://img.shields.io/badge/Status-Concluido-green
 
 
-<h1 align="center"> LAding Page desenvolvinda para demonstrar meus aprendizados com o desenvolvimento Frontend para recurtadores</h1>
+<h3 align="center"> Lading Page desenvolvinda para demonstrar meus aprendizados com o desenvolvimento Frontend para recurtadores</h1>
 Link do Portfolio: https://muriloviskexe.github.io/Meu-Curriculo/index.html
